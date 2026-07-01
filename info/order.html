@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ฟอร์มสั่งขนม</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">หน้าแรก (home)</a> | 
+            <a href="/info/menu.html">เมนูขนม (menu)</a> | 
+            <a href="/info/order.html">สั่งขนม (order)</a>
+        </nav>
+    </header>
+
+    <h2>ฟอร์มสั่งซื้อขนม</h2>
+    
+    <form action="#" method="POST">
+        <p>
+            <label for="menu">เลือกเมนูขนม:</label><br>
+            <select id="menu" name="menu" required>
+                <option value="">-- กรุณาเลือกเมนู --</option>
+                <option value="strwcake">Strawberry Cheesecake</option>
+                <option value="chococake">Chocolate Cheesecake</option>
+                <option value="meloncake">Melon Cheesecake</option>
+                <option value="orangecake">Orange Cheesecake</option>
+                <option value="blueberry">Blueberry Cheesecake</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="quantity">จำนวน:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        </p>
+
+        <p>
+            <label for="special-instructions">คำสั่งพิเศษ:</label><br>
+            <textarea id="special-instructions" name="special-instructions" rows="3" cols="30"></textarea>
+        </p>
+
+        <p>
+            <label for="name">ชื่อผู้รับ:</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+            <label for="phone">เบอร์โทรศัพท์:</label><br>
+            <input type="tel" id="phone" name="phone" required>
+        </p>
+
+        <p>
+            <label for="pickup-date">วันที่ต้องการรับ:</label><br>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+        </p>
+
+        <p>
+            <label for="address">ที่อยู่จัดส่ง:</label><br>
+            <textarea id="address" name="address" rows="4" cols="30" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">ส่งข้อมูลการสั่งซื้อ</button>
+        </p>
+    </form>
+
+</body>
+</html>
